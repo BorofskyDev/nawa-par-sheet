@@ -6,9 +6,9 @@ export default function TwoByteMuffins({ data }) {
   const processedData = dataHelper(data)
 
   return (
-    <div className={styles.TwoByteMuffins} >
+    <div className={styles.twoByteMuffins} >
       <h1>2Byte Muffins</h1>
-      <ul>
+      <ul className={styles.parSheetList}>
         {processedData.map((item) => (
           <li key={item.id}>
             <h2>Brand: {item.brand}</h2>

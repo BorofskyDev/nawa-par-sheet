@@ -1,3 +1,9 @@
 .twoByteMuffins {
-    
+    width: calc(100dvw - 2rem);
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
 }
