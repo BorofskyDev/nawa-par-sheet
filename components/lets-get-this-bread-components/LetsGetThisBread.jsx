@@ -1,13 +1,12 @@
 import { dataHelper } from '@/libs/functions/dataHelper'
 import { GiInfinity } from 'react-icons/gi'
 
-
-export default function TortillaTown({ data }) {
+export default function LetsGetThisBread({ data }) {
   const processedData = dataHelper(data)
 
   return (
     <div>
-      <h1>Tortilla Town</h1>
+      <h1>Let's Get This Bread</h1>
       <ul>
         {processedData.map((item) => (
           <li key={item.id}>
@@ -23,7 +22,7 @@ export default function TortillaTown({ data }) {
             </p>
 
             <p>
-              Shelf Life: {item.shelfLife} {item.brand === 'staceys' ? 'days from production date on box' : 'days'}
+              Shelf Life: {item.shelfLife} days
             </p>
             <p>Expiration Date: {item.expirationDate}</p>
           </li>

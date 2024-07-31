@@ -1,11 +1,14 @@
-import TortillaTown from "@/components/tortilla-town-components/TortillaTown";
-import { tortillaTownData } from "@/libs/data/tortilla-town/tortillaTownData";
+
+import Link from "next/link";
+
 
 
 export default function Home() {
   return (
     <main >
-      <TortillaTown data={tortillaTownData} />
+      <Link href="/tortilla-town">Tortilla Town</Link>
+      <Link href="/lets-get-this-bread">Let's Get This Bread</Link>
+      <Link href="/fayk-meats">Fayk Meats</Link>
     </main>
   );
 }
