@@ -1,11 +1,12 @@
 import { dataHelper } from '@/libs/functions/dataHelper'
 import { GiInfinity } from 'react-icons/gi'
+import styles from './TwoByteMuffins.module.scss'
 
 export default function TwoByteMuffins({ data }) {
   const processedData = dataHelper(data)
 
   return (
-    <div>
+    <div className={styles.TwoByteMuffins} >
       <h1>2Byte Muffins</h1>
       <ul>
         {processedData.map((item) => (

@@ -1,11 +1,12 @@
 import { dataHelper } from '@/libs/functions/dataHelper'
 import { GiInfinity } from 'react-icons/gi'
+import styles from './FaykMeats.module.scss'
 
 export default function FaykMeats({ data }) {
   const processedData = dataHelper(data)
 
   return (
-    <div>
+    <div className={styles.faykMeats}>
       <h1>Fayk Meats</h1>
       <ul>
         {processedData.map((item) => (
