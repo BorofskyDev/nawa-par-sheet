@@ -1,5 +1,6 @@
 import ParSheetLinkButton from '@/components/buttons/par-sheet-link-button/ParSheetLinkButton'
 import styles from './LinkContainer.module.scss'
+import ThemeToggle from '../theme-toggle/ThemeToggle'
 
 export default function LinkContainer() {
   return (
@@ -14,6 +15,7 @@ export default function LinkContainer() {
       <ParSheetLinkButton href='two-byte-muffins'>
         2Byte Muffins
       </ParSheetLinkButton>
+      <ThemeToggle />
     </div>
   )
 }

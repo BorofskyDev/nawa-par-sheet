@@ -1,6 +1,5 @@
 import { righteous, openSans } from './fonts'
 import LinkContainer from '@/components/layout/link-container/LinkContainer'
-import ThemeToggle from '@/components/layout/theme-toggle/ThemeToggle'
 import '@/styles/globals.scss'
 import { ThemeProvider } from 'next-themes'
 
@@ -20,7 +19,7 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           {children}
           <LinkContainer />
-          <ThemeToggle />
+          
         </ThemeProvider>
       </body>
     </html>

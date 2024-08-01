@@ -27,7 +27,7 @@ export default function ThemeToggle() {
 
   return mounted ? (
     <button
-      className={styles.themeToggle}
+      className={`${styles.themeToggle}`}
       onClick={toggleTheme}
     >
       {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
