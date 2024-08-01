@@ -1,0 +1,7 @@
+@mixin gradientBorder($primary-color, $secondary-color, $highlight-color) {
+  position: relative;
+  border: 4px solid $primary-color;
+  box-shadow: 0 0 10px 4px $secondary-color, 0 0 5px 2px $highlight-color inset;
+
+ 
+}

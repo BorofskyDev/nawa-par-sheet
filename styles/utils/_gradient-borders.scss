@@ -1,0 +1,33 @@
+@use '../mixins' as *;
+
+.lgtbq-border {
+  @include gradientBorder(
+      hsl(var(--lgtbq-primary-color)),
+      hsl(var(--lgtbq-secondary-color)),
+      hsl(var(--lgtbq-highlight-color))
+  );
+}
+
+.tt-border {
+  @include gradientBorder(
+    hsl(var(--tt-primary-color)),
+    hsl(var(--tt-secondary-color)),
+    hsl(var(--tt-highlight-color))
+  );
+}
+
+.fm-border {
+  @include gradientBorder(
+    hsl(var(--fm-primary-color)),
+    hsl(var(--fm-secondary-color)),
+    hsl(var(--fm-highlight-color))
+  );
+}
+
+.tbm-border {
+  @include gradientBorder(
+    hsl(var(--2bm-primary-color)),
+    hsl(var(--2bm-secondary-color)),
+    hsl(var(--2bm-highlight-color))
+  );
+}

@@ -28,12 +28,14 @@ export default function ParSheet({ data, className }) {
             </p>
 
             <p className={styles.productCard__shelfLife}>
-              Shelf Life: {item.shelfLife}{' '}
+              Shelf Life: <span>{item.shelfLife}</span>{' '}
               {item.brand === 'staceys'
                 ? 'days from production date on box'
                 : 'days'}
             </p>
-            <p className={styles.productCard__expDate}>Expiration Date: {item.expirationDate}</p>
+            <p className={styles.productCard__expDate}>
+              Expiration Date:<span> {item.expirationDate}</span>
+            </p>
           </li>
         ))}
       </ul>

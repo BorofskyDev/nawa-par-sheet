@@ -6,7 +6,10 @@ export default function LetsGetThisBread({ data }) {
   return (
     <>
       <MainHeading>Let's Get This Bread, Queen!</MainHeading>
-      <ParSheet data={data} className={styles.letsGetThisBread} />
+      <ParSheet
+        data={data}
+        className='lgtbq-border lgtbq-theme'
+      />
     </>
   )
 }

@@ -1,8 +1,11 @@
+import MainHeading from '@/components/headings/main-heading/MainHeading'
 import ParSheet from '../ParSheet'
-import styles from './FaykMeats.module.scss'
 
 export default function FaykMeats({ data }) {
   return (
-    <ParSheet data={data} className={styles.faykMeats} />
+    <div>
+<MainHeading>Fayk Meats</MainHeading>
+      <ParSheet data={data} className='fm-border fm-theme' />
+    </div>
   )
 }
