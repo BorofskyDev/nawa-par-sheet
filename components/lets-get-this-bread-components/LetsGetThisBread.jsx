@@ -6,7 +6,7 @@ export default function LetsGetThisBread({ data }) {
 
   return (
     <div>
-      <h1>Let's Get This Bread</h1>
+      <h1>Let's Get This Bread, Queen!</h1>
       <ul>
         {processedData.map((item) => (
           <li key={item.id}>

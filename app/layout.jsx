@@ -1,7 +1,11 @@
-import { Inter } from "next/font/google";
+import { righteous, openSans } from "./fonts";
+import LinkContainer from "@/components/layout/link-container/LinkContainer";
+import ThemeToggle from "@/components/layout/theme-toggle/ThemeToggle";
 import '@/styles/globals.scss'
 
-const inter = Inter({ subsets: ["latin"] });
+
+const header = righteous 
+const body = openSans
 
 export const metadata = {
   title: "Important Sheet",
@@ -11,7 +15,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={`${header.variable} ${body.variable}`}>
+        {children}
+        <LinkContainer />
+        <ThemeToggle />
+      </body>
     </html>
   )
 }

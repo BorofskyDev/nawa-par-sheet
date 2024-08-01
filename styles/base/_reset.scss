@@ -76,10 +76,10 @@ h6 {
 }
 
 body {
-//   background-color: hsl(var(--color-background));
-//   font-family: var(--font-body);
+  background-color: hsl(var(--background-color));
+  font-family: var(--font-body);
 //   font-size: var(--fs-400);
-//   color: hsl(var(--color-text));
+  color: hsl(var(--text-color));
   line-height: 150%;
   overflow-x: hidden;
 //   transition: all var(--transition-main);

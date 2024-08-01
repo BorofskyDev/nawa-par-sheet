@@ -1,0 +1,65 @@
+:root {
+  // Neutrals
+  --background-color: 0 0% 99%; // #FCFCFC
+  --secondary-background-color: 0 0% 94%; // #F0F0F0
+  --text-color: 240 2% 12%; // #1d1d1e
+
+  // Highlights
+  --primary-color: 187 100% 42%; // #00BCD4
+  --secondary-color: 54 100% 62%; // #FFEB3B
+  --highlight-color: 340 100% 63%; // #FF4081
+
+  // Let's Get This Bread Queen
+  --lgtbq-primary-color: 36 100% 65%; // #FFB74D
+  --lgtbq-secondary-color: 54 100% 62%; // #FFEB3B
+  --lgtbq-highlight-color: 37 100% 94%; // #FFF3E0
+
+  // Fayk Meats
+  --fm-primary-color: 123 38% 57%; // #66BB6A
+  --fm-secondary-color: 54 100% 62%; // #FFEB3B
+  --fm-highlight-color: 125 39% 94%; // #E8F5E9
+
+  // 2Byte Muffins
+  --2bm-primary-color: 291 47% 60%; // #BA68C8
+  --2bm-secondary-color: 14 100% 63%; // #FF7043
+  --2bm-highlight-color: 292 44% 93%; // #F3E5F5
+
+  // Tortilla Town
+  --tt-primary-color: 14 100% 57%; // #FF5722
+  --tt-secondary-color: 45 100% 51%; // #FFC107
+  --tt-highlight-color: 37 100% 94%; // #FFF3E0
+
+
+}
+
+[data-theme='dark'] {
+  // Neutrals
+  --color-background: 240 3% 17%; // #2b2b2e
+  --color-secondary-background: 240 3% 12%; // #1d1d1f
+  --color-text: 0 5% 96%; // #f5f4f4
+
+  // Highlights
+  --primary-color: 201 98% 41%; // #0288D1
+  --secondary-color: 43 96% 58%; // #FBC02D
+  --highlight-color: 339 100% 48%; // #F50057
+
+  // Let's Get This Bread Queen
+  --lgtbq-primary-color: 36 100% 50%; // #FF7043
+  --lgtbq-secondary-color: 45 100% 51%; // #FFC107
+  --lgtbq-highlight-color: 9 28% 19%; // #3E2723
+
+  // Fayk Meats
+  --fm-primary-color: 123 43% 39%; // #388E3C
+  --fm-secondary-color: 49 98% 60%; // #FDD835
+  --fm-highlight-color: 124 55% 24%; // #1B5E20
+
+  // 2Byte Muffins
+  --2bm-primary-color: 287 65% 40%; // #8E24AA
+  --2bm-secondary-color: 340 100% 63%; // #FF4081
+  --2bm-highlight-color: 251 69% 34%; // #311B92
+
+  // Tortilla Town
+  --tt-primary-color: 14 100% 70%; // #FF8A65
+  --tt-secondary-color: 45 100% 58%; // #FFCA28
+  --tt-highlight-color: 11 28% 24%; // #4E342E
+}
