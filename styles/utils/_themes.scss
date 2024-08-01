@@ -1,9 +1,43 @@
 .default-theme {
-    background: hsl(var(--secondary-background-color));
-
+  background: hsl(var(--secondary-background-color));
 }
 
 .lgtbq-theme {
+  background: hsl(var(--secondary-background-color));
+  background-image: linear-gradient(
+    90deg,
+    hsl(var(--lgtbq-primary-color) / 0.3) 0%,
+    hsl(var(--lgtbq-secondary-color) / 0.3) 50%,
+    hsl(var(--lgtbq-highlight-color) / 0.3) 100%
+  );
+}
+
+.tt-theme {
     background: hsl(var(--secondary-background-color));
-    background-image: linear-gradient(90deg, hsl(var(--lgtbq-primary-color) / 0.3) 0%, hsl(var(--lgtbq-secondary-color) / 0.3) 50%, hsl(var(--lgtbq-highlight-color) / 0.3) 100%);
+    background-image: linear-gradient(
+        90deg,
+        hsl(var(--tt-primary-color) / 0.3) 0%,
+        hsl(var(--tt-secondary-color) / 0.3) 50%,
+        hsl(var(--tt-highlight-color) / 0.3) 100%
+    );
+}
+
+.fm-theme {
+    background: hsl(var(--secondary-background-color));
+    background-image: linear-gradient(
+        90deg,
+        hsl(var(--fm-primary-color) / 0.3) 0%,
+        hsl(var(--fm-secondary-color) / 0.3) 50%,
+        hsl(var(--fm-highlight-color) / 0.3) 100%
+    );
+}
+
+.tbm-theme {
+    background: hsl(var(--secondary-background-color));
+    background-image: linear-gradient(
+        90deg,
+        hsl(var(--2bm-primary-color) / 0.3) 0%,
+        hsl(var(--2bm-secondary-color) / 0.3) 50%,
+        hsl(var(--2bm-highlight-color) / 0.3) 100%
+    );
 }

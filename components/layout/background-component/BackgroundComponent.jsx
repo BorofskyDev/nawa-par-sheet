@@ -35,7 +35,7 @@ export default function BackgroundComponent() {
         </g>
         <defs>
           <mask id='SvgjsMask1006'>
-            <rect width='1440' height='560' fill='hsl(var(--background-color))'></rect>
+            <rect width='1440' height='560' fill='hsl(var(--background-color) / 0.25)'></rect>
           </mask>
         </defs>
       </svg>

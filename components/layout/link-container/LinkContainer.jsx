@@ -8,11 +8,11 @@ export default function LinkContainer() {
       <ParSheetLinkButton className='lgtbq-theme' href='lets-get-this-bread'>
         Let's Get This Bread, Queen!
       </ParSheetLinkButton>
-      <ParSheetLinkButton href='tortilla-town'>
+      <ParSheetLinkButton className='tt-theme'  href='tortilla-town'>
         Tortilla Town
       </ParSheetLinkButton>
-      <ParSheetLinkButton href='fayk-meats'>Fayk Meats</ParSheetLinkButton>
-      <ParSheetLinkButton href='two-byte-muffins'>
+      <ParSheetLinkButton className='fm-theme' href='fayk-meats'>Fayk Meats</ParSheetLinkButton>
+      <ParSheetLinkButton className='tbm-theme' href='two-byte-muffins'>
         2Byte Muffins
       </ParSheetLinkButton>
       <ThemeToggle />
