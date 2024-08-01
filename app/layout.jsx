@@ -1,5 +1,6 @@
 import { vt323, inconsolata } from './fonts'
 import LinkContainer from '@/components/layout/link-container/LinkContainer'
+import Navbar from '@/components/layout/nav/Navbar'
 import '@/styles/globals.scss'
 import { ThemeProvider } from 'next-themes'
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${header.variable} ${body.variable}`}>
         <ThemeProvider>
+          <Navbar />
           {children}
           <LinkContainer />
         </ThemeProvider>
