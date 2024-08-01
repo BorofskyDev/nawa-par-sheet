@@ -1,3 +1,4 @@
+import BackgroundComponent from '@/components/layout/background-component/BackgroundComponent'
 import { righteous, openSans } from './fonts'
 import LinkContainer from '@/components/layout/link-container/LinkContainer'
 import '@/styles/globals.scss'
@@ -17,9 +18,9 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body className={`${header.variable} ${body.variable}`}>
         <ThemeProvider>
+          <BackgroundComponent />
           {children}
           <LinkContainer />
-          
         </ThemeProvider>
       </body>
     </html>

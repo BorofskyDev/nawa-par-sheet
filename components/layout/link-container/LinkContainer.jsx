@@ -5,7 +5,7 @@ import ThemeToggle from '../theme-toggle/ThemeToggle'
 export default function LinkContainer() {
   return (
     <div className={styles.linkContainer}>
-      <ParSheetLinkButton href='lets-get-this-bread'>
+      <ParSheetLinkButton className='lgtbq-theme' href='lets-get-this-bread'>
         Let's Get This Bread, Queen!
       </ParSheetLinkButton>
       <ParSheetLinkButton href='tortilla-town'>

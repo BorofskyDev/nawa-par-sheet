@@ -1,0 +1,19 @@
+.backgroundComponent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    transition: var(--transition-main);
+    
+    & svg {
+    
+        transition: var(--transition-main);
+
+        & path {
+            transition: var(--transition-main);
+        }
+    }
+}
