@@ -69,9 +69,6 @@ h6 {
 body {
     height: 100dvh;
   background-color: hsl(var(--background-color));
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   font-family: var(--font-body);
   font-size: var(--fs-400);
   color: hsl(var(--text-color));

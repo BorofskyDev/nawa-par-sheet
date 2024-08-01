@@ -1,18 +1,23 @@
 :root {
   // Neutrals
-  --background-color: 0 0% 99%; // #FCFCFC
-  --secondary-background-color: 0 0% 94%; // #F0F0F0
+  --background-color: 180 100% 25%; // #008080
+  --secondary-background-color: 0 0% 75%; // #C0C0C0
   --text-color: 240 0% 10%; // #1A1A1A
 
   // Highlights
-  --primary-color: 187 100% 42%; // #00BCD4
-  --secondary-color: 54 100% 62%; // #FFEB3B
-  --highlight-color: 340 100% 63%; // #FF4081
+  --primary-color: 240 75% 25%; // #101070
+  --secondary-color: 0 0% 67%; // #ACACAC
+  --highlight-color: 60 60% 50%; // #CCCC33
 
   // Let's Get This Bread Queen
-  --lgtbq-primary-color: 36 100% 65%; // #FFB74D
-  --lgtbq-secondary-color: 54 100% 62%; // #FFEB3B
+  --lgtbq-primary-color: 40 78% 64%; // #EBBA5B
+  --lgtbq-secondary-color: 54 70% 74%; // #EBE18D
   --lgtbq-highlight-color: 37 100% 94%; // #FFF3E0
+
+  // Tortilla Town
+  --tt-primary-color: 14 100% 57%; // #FF5722
+  --tt-secondary-color: 45 100% 51%; // #FFC107
+  --tt-highlight-color: 37 100% 94%; // #FFF3E0
 
   // Fayk Meats
   --fm-primary-color: 123 38% 57%; // #66BB6A
@@ -23,13 +28,6 @@
   --2bm-primary-color: 291 47% 60%; // #BA68C8
   --2bm-secondary-color: 14 100% 63%; // #FF7043
   --2bm-highlight-color: 292 44% 93%; // #F3E5F5
-
-  // Tortilla Town
-  --tt-primary-color: 14 100% 57%; // #FF5722
-  --tt-secondary-color: 45 100% 51%; // #FFC107
-  --tt-highlight-color: 37 100% 94%; // #FFF3E0
-
-
 }
 
 [data-theme='dark'] {
@@ -48,6 +46,11 @@
   --lgtbq-secondary-color: 45 100% 51%; // #FFC107
   --lgtbq-highlight-color: 9 28% 19%; // #3E2723
 
+  // Tortilla Town
+  --tt-primary-color: 14 100% 70%; // #FF8A65
+  --tt-secondary-color: 45 100% 58%; // #FFCA28
+  --tt-highlight-color: 11 28% 24%; // #4E342E
+
   // Fayk Meats
   --fm-primary-color: 123 43% 39%; // #388E3C
   --fm-secondary-color: 49 98% 60%; // #FDD835
@@ -57,9 +60,4 @@
   --2bm-primary-color: 287 65% 40%; // #8E24AA
   --2bm-secondary-color: 340 100% 63%; // #FF4081
   --2bm-highlight-color: 251 69% 34%; // #311B92
-
-  // Tortilla Town
-  --tt-primary-color: 14 100% 70%; // #FF8A65
-  --tt-secondary-color: 45 100% 58%; // #FFCA28
-  --tt-highlight-color: 11 28% 24%; // #4E342E
 }

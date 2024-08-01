@@ -1,11 +1,10 @@
-import BackgroundComponent from '@/components/layout/background-component/BackgroundComponent'
-import { righteous, openSans } from './fonts'
+import { vt323, inconsolata } from './fonts'
 import LinkContainer from '@/components/layout/link-container/LinkContainer'
 import '@/styles/globals.scss'
 import { ThemeProvider } from 'next-themes'
 
-const header = righteous
-const body = openSans
+const header = vt323
+const body = inconsolata
 
 export const metadata = {
   title: 'Important Sheet',
@@ -18,7 +17,6 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <body className={`${header.variable} ${body.variable}`}>
         <ThemeProvider>
-          <BackgroundComponent />
           {children}
           <LinkContainer />
         </ThemeProvider>

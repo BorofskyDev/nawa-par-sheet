@@ -1,12 +1,12 @@
-import { Righteous, Open_Sans } from "next/font/google";
+import { VT323, Inconsolata } from "next/font/google";
 
-export const righteous = Righteous({
+export const vt323 = VT323({
     subsets: ['latin'],
-    variables: '--font-heading',
+    variable: '--font-heading',
     weight: ['400']
 })
 
-export const openSans = Open_Sans({
+export const inconsolata = Inconsolata({
   subsets: ['latin'],
   variable: '--font-body',
   weight: ['400', '700'],
