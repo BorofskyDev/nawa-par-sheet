@@ -7,6 +7,7 @@
 }
 
 html {
+  height: 100%;
   box-sizing: border-box;
   font-size: 100%;
   overflow-x: hidden;
@@ -66,8 +67,12 @@ h6 {
   //   font-family: var(--ff-heading);
 }
 
+// main {
+//   height: 100%;
+// }
+
 body {
-    height: 100dvh;
+  height: 100%;
   background-color: hsl(var(--background-color));
   font-family: var(--font-body);
   font-size: var(--fs-400);
