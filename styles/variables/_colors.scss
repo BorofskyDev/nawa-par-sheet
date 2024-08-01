@@ -2,7 +2,7 @@
   // Neutrals
   --background-color: 0 0% 99%; // #FCFCFC
   --secondary-background-color: 0 0% 94%; // #F0F0F0
-  --text-color: 240 2% 12%; // #1d1d1e
+  --text-color: 240 0% 10%; // #1A1A1A
 
   // Highlights
   --primary-color: 187 100% 42%; // #00BCD4
@@ -34,9 +34,9 @@
 
 [data-theme='dark'] {
   // Neutrals
-  --color-background: 240 3% 17%; // #2b2b2e
-  --color-secondary-background: 240 3% 12%; // #1d1d1f
-  --color-text: 0 5% 96%; // #f5f4f4
+  --background-color: 240 3% 17%; // #2b2b2e
+  --secondary-background-color: 240 3% 12%; // #1d1d1f
+  --text-color: 0 5% 96%; // #f5f4f4
 
   // Highlights
   --primary-color: 201 98% 41%; // #0288D1

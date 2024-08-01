@@ -18,21 +18,12 @@ a:visited,
 a:active,
 a:link {
   text-decoration: none;
-//   font-family: var(--ff-body);
+    font-family: var(--font-body);
 }
 
-// a {
-//   color: hsl(var(--color-link-primary));
-
-//   &:hover,
-//   &:focus {
-//     color: hsl(var(--color-link-highlight));
-//   }
-
-//   &:active {
-//     color: hsl(var(--color-link-active));
-//   }
-// }
+a {
+  color: hsl(var(--text-color));
+}
 
 ul,
 li,
@@ -72,21 +63,20 @@ h3,
 h4,
 h5,
 h6 {
-//   font-family: var(--ff-heading);
+  //   font-family: var(--ff-heading);
 }
 
 body {
   background-color: hsl(var(--background-color));
   font-family: var(--font-body);
-//   font-size: var(--fs-400);
+  font-size: var(--fs-400);
   color: hsl(var(--text-color));
   line-height: 150%;
   overflow-x: hidden;
-//   transition: all var(--transition-main);
+  transition: all var(--transition-main);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-
 }
 
 .no-scroll {
