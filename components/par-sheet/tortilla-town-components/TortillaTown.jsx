@@ -5,7 +5,6 @@ export default function TortillaTown({ data }) {
   return (
     <ParSheet
       data={data}
-      title='Tortilla Town!'
       className={styles.tortillaTown}
     />
   )
