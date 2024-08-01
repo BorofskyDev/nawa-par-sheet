@@ -1,8 +1,6 @@
-import TortillaTown from "@/components/tortilla-town-components/TortillaTown";
+import TortillaTown from '@/components/par-sheet/tortilla-town-components/TortillaTown'
 import { tortillaTownData } from '@/libs/data/tortilla-town/tortillaTownData'
 
 export default function TortillaTownPage() {
-    return (
-        <TortillaTown data={tortillaTownData} />
-    )
+  return <TortillaTown data={tortillaTownData} />
 }
