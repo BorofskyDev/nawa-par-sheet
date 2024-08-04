@@ -9,7 +9,7 @@ export default function ParSheet({ data, className }) {
     <div className={`${className} ${styles.parSheet}`}>
       <ul className={styles.parSheet__cardList}>
         {processedData.map((item) => (
-          <li className={styles.productCard} key={item.id}>
+          <li className={styles.productCard} key={`${item.id}-${item.brand}-${item.name}`}>
             <h2 className={styles.productCard__brand}>
               Brand: <span>{item.brand}</span>
             </h2>

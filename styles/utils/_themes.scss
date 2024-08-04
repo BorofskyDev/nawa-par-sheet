@@ -1,5 +1,11 @@
 .default-theme {
   background: hsl(var(--secondary-background-color));
+  background-image: linear-gradient(
+    45deg,
+    hsl(var(--primary-color) / 0.5 ) 0%,
+    hsl(var(--secondary-color) / 0.5 ) 50%,
+    hsl(var(--highlight-color) / 0.5 ) 100%
+  );
 }
 
 .lgtbq-theme {

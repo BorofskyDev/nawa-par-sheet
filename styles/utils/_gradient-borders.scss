@@ -1,5 +1,13 @@
 @use '../mixins' as *;
 
+.default-border {
+   @include gradientBorder(
+    hsl(var(--primary-color)),
+    hsl(var(--secondary-color)),
+    hsl(var(--highlight-color))
+  );
+}
+
 .lgtbq-border {
   @include gradientBorder(
       hsl(var(--lgtbq-primary-color)),

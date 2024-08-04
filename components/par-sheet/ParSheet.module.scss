@@ -21,10 +21,10 @@
 }
 
 .productCard {
-
+    max-width: calc(40rem - 6rem);
     height: 16rem;
     border: 1px solid hsl(var(--text-color));
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     box-shadow: 4px 4px 0 rgba(0, 0, 0, 1);
     background-color: hsl(var(--secondary-background-color));
     display: grid;
@@ -97,7 +97,7 @@
 
         & span {
             grid-row: 2 / 3;
-            font-size: var(--fs-800);
+            font-size: var(--fs-700);
             font-weight: bolder;
            color: hsl(var(--primary-color));
         }

@@ -1,11 +1,11 @@
-import MainHeading from "@/components/headings/main-heading/MainHeading";
-
-
+import MainHeading from '@/components/headings/main-heading/MainHeading'
+import SearchBar from '@/components/search-bar/SearchBar'
 
 export default function Home() {
   return (
-    <main >
+    <main>
       <MainHeading>The PAR Sheet!</MainHeading>
+      <SearchBar />
     </main>
-  );
+  )
 }
