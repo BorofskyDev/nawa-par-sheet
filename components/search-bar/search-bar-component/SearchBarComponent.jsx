@@ -24,7 +24,7 @@ export default function SearchBarComponent({ onSearch, allBrands }) {
       {filteredBrands.length > 0 && (
         <Autocomplete
           suggestions={filteredBrands}
-          onClick={handleAutocompleteClick}
+          onClick={(brand) => handleAutocompleteClick(brand, onSearch)}
         />
       )}
     </div>

@@ -1,11 +1,15 @@
 .autocomplete {
   max-height: 20rem;
+  padding: 1rem 2.5rem;
   border: 1px solid hsl(var(--text-color));
   overflow-y: auto;
-  background: hsl(var(--secondary-background-color));
+  background: white;
+  border: 1px solid hsl(var(--primary-color));
 
   li {
     padding: 0.5rem;
+    font-weight: bolder;
+    font-size: var(--fs-700);
     cursor: pointer;
   }
 }

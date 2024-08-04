@@ -17,9 +17,10 @@ export default function useSearchBar(allBrands) {
     }
   }
 
-  const handleAutocompleteClick = (brand) => {
+  const handleAutocompleteClick = (brand, onSearch) => {
     setQuery(brand)
     setFilteredBrands([])
+    onSearch(brand)
   }
 
   return {

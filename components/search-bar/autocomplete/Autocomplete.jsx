@@ -5,7 +5,7 @@ export default function Autocomplete({ suggestions, onClick }) {
     <ul className={styles.autocomplete}>
       {suggestions.map((suggestion, index) => (
         <li key={index} onClick={() => onClick(suggestion)}>
-          {suggestions}{' '}
+          {suggestion}
         </li>
       ))}
     </ul>
