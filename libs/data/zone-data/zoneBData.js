@@ -1,0 +1,68 @@
+export const zoneBData = [
+  {
+    id: 1,
+    taskName: 'Take Temps',
+    completeTaskBy: 13,
+    workingTask: false,
+    completedTask: false,
+    taskDays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    taskDesc: 'Conduct a temperature walk for Grocery and Whole Body.',
+  },
+  {
+    id: 2,
+    taskName: 'Work Truck',
+    completeTaskBy: 15,
+    workingTask: false,
+    completedTask: false,
+    taskDays: ['Sun', 'Tues', 'Wed', 'Fri', 'Sat'],
+    taskDesc:
+      'Work any uboats in the back hallway or work a live one on the floor',
+  },
+  {
+    id: 3,
+    taskName: 'Take Temps',
+    completeTaskBy: 17,
+    workingTask: false,
+    completedTask: false,
+    taskDays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    taskDesc: 'Conduct a temperature walk for Grocery and Whole Body.',
+  },
+  {
+    id: 4,
+    taskName: 'Daily Email',
+    completeTaskBy: 15,
+    workingTask: false,
+    completedTask: false,
+    taskDays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    taskDesc:
+      'Send email to team to let them know what was completed for the daily work list and recap anything they should know',
+  },
+  {
+    id: 5,
+    taskName: 'Global Date Check',
+    completeTaskBy: 19,
+    workingTask: false,
+    completedTask: false,
+    taskDays: ['Mon'],
+    taskDesc: 'Pull expired product from pull list',
+  },
+  {
+    id: 8,
+    taskName: 'Put Up Samples',
+    completeTaskBy: 10,
+    workingTask: false,
+    completedTask: false,
+    taskDays: ['Sun', 'Fri', 'Sat'],
+    taskDesc:
+      'Put up the samples that are on the floor and clean the area and equipment for the next use',
+  },
+  {
+    id: 9,
+    taskName: 'Donations',
+    completeTaskBy: 13,
+    workingTask: false,
+    completedTask: false,
+    taskDays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    taskDesc: 'Take donations to the back door in recieving.',
+  },
+]

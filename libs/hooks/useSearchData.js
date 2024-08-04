@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { faykMeatsData } from '../data/fayk-meats/faykMeats'
-import { tortillaTownData } from '../data/tortilla-town/tortillaTownData'
-import { letsGetThisBreadData } from '../data/lets-get-this-bread/letsGetThisBread'
-import { twoByteMuffinsData } from '../data/two-byte-muffins/twoByteMuffins'
+import { faykMeatsData } from '../data/par-sheet-data/fayk-meats/faykMeats'
+import { tortillaTownData } from '../data/par-sheet-data/tortilla-town/tortillaTownData'
+import { letsGetThisBreadData } from '../data/par-sheet-data/lets-get-this-bread/letsGetThisBread'
+import { twoByteMuffinsData } from '../data/par-sheet-data/two-byte-muffins/twoByteMuffins'
 
 const allData = [
   ...faykMeatsData,
