@@ -6,19 +6,19 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <ul>
         <li>
-          <NavTab href='/' title='home' />
+          <NavTab href='/par-sheets/' title='home' />
         </li>
         <li>
-          <NavTab href='/lets-get-this-bread' title='Lets Get This Bread' />
+          <NavTab href='/par-sheets/lets-get-this-bread' title='Lets Get This Bread' />
         </li>
         <li>
-          <NavTab href='/tortilla-town' title='Tortilla Town' />
+          <NavTab href='/par-sheets/tortilla-town' title='Tortilla Town' />
         </li>
         <li>
-          <NavTab href='/fayk-meats' title='Fayk Meats' />
+          <NavTab href='/par-sheets/fayk-meats' title='Fayk Meats' />
         </li>
         <li>
-          <NavTab href='/two-byte-muffins' title='2byte Muffins' />
+          <NavTab href='/par-sheets/two-byte-muffins' title='2byte Muffins' />
         </li>
       </ul>
     </nav>

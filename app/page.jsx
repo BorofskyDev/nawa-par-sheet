@@ -1,11 +1,18 @@
-import MainHeading from '@/components/headings/main-heading/MainHeading'
-import SearchBar from '@/components/search-bar/SearchBar'
+import MainLinkButton from '@/components/buttons/main-link-button/MainLinkButton'
+import MainTitle from '@/components/headings/main-title/MainTitle'
 
 export default function Home() {
   return (
     <main>
-      <MainHeading>The PAR Sheet!</MainHeading>
-      <SearchBar />
+      <MainTitle />
+      <ul>
+        <li>
+          <MainLinkButton href='/par-sheets'>PAR Sheets</MainLinkButton>
+        </li>
+        <li>
+          <MainLinkButton href='/zones'>Zone Selection</MainLinkButton>
+        </li>
+      </ul>
     </main>
   )
 }

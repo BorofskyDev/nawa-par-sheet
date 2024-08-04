@@ -1,10 +1,6 @@
-import PageNotice from '@/components/headings/page-notice/PageNotice'
 import { vt323, inconsolata } from './fonts'
-import LinkContainer from '@/components/layout/link-container/LinkContainer'
-import Navbar from '@/components/layout/nav/Navbar'
-import '@/styles/globals.scss'
 import { ThemeProvider } from 'next-themes'
-import { GiInfinity } from 'react-icons/gi'
+import '@/styles/globals.scss'
 
 const header = vt323
 const body = inconsolata
@@ -24,12 +20,9 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${header.variable} ${body.variable}`}>
         <ThemeProvider>
-          <Navbar />
-          <PageNotice>
-            <GiInfinity />{''} = Stack as much as possible
-          </PageNotice>
+          
+          
           {children}
-          <LinkContainer />
         </ThemeProvider>
       </body>
     </html>
