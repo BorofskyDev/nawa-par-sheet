@@ -1,0 +1,40 @@
+.mainTitle {
+    width: calc(100% - 4rem);
+    margin: 4rem auto;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    line-height: 1;
+    
+    & span {
+        font-family: var(--font-heading);
+        font-size: 8rem;
+        font-weight: 900;
+        letter-spacing: 0.5rem;
+        text-shadow: 4px 4px 0 hsl(var(--text-color));
+
+        &:nth-of-type(1) {
+            color: hsl(var(--primary-red-color));
+        }
+        &:nth-of-type(2) {
+            color: hsl(var(--primary-green-color));
+        }
+        &:nth-of-type(3) {
+            color: hsl(var(--primary-blue-color));
+        }
+        &:nth-of-type(4) {
+            color: hsl(var(--primary-yellow-color));
+        }
+        
+    }
+
+    & p {
+        width: calc(100% - 4rem);
+        text-align: center;
+        margin: 0 auto;
+        font-size: var(--fs-700);
+        font-weight: 700;
+    }
+    
+}

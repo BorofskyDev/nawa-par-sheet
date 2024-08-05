@@ -3,7 +3,7 @@ import styles from './ZoneLink.module.scss'
 
 export default function ZoneLink({ href, children, className }) {
   return (
-    <Link className={`${className} ${styles.zoneLink}`} href={href}>
+    <Link className={`${styles.zoneLink} ${className}`} href={href}>
       {children}
     </Link>
   )

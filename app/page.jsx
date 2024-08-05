@@ -5,11 +5,11 @@ export default function Home() {
   return (
     <main>
       <MainTitle />
-      <ul>
-        <li>
+      <ul className='grid-center'>
+        <li className='red-theme'>
           <MainLinkButton href='/par-sheets'>PAR Sheets</MainLinkButton>
         </li>
-        <li>
+        <li className='green-theme'>
           <MainLinkButton href='/zones'>Zone Selection</MainLinkButton>
         </li>
       </ul>
