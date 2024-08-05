@@ -4,7 +4,7 @@ export const saveTasksToLocalStorage = (tasks) => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks))
 }
 
-export const loadTasksFromLocalStorate = () => {
+export const loadTasksFromLocalStorage = () => {
   const tasks = localStorage.getItem(STORAGE_KEY)
   return tasks ? JSON.parse(tasks) : null
 }
