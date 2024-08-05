@@ -4,7 +4,7 @@ import ZoneLinkList from "@/components/zones/zone-link-list/ZoneLinkList";
 
 export default function ZonesApp({zone}) {
     return (
-    <div>
+    <div className='grid-center'>
         <MainHeading>Get In The Zone!</MainHeading>
         <ZoneLinkList />
     </div>  
