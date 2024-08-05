@@ -1,15 +1,13 @@
 .zoneLink {
-    display: inline-block;
-    padding: 1rem 2.5rem;
-    border: 2px solid rgba(0, 0, 0, 1);
-    border-radius: 0.5rem;
-    box-shadow: 8px 8px 0px rgb(0, 0, 0);
-    background: hsl(var(--secondary-background-color));
-    font-size: var(--fs-600);
-    font-weight: bold;
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border: 2px solid hsl(var(--text-color));
+  box-shadow: 8px 8px 0px rgb(0, 0, 0);
+  // background: hsl(var(--secondary-background-color));
+  font-size: var(--fs-600);
+  font-weight: bold;
 
-    background-color: hotpink;
-    & span {
-        display: inline-block;
-    }
+  & span {
+    display: inline-block;
+  }
 }

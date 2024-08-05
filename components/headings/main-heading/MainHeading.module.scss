@@ -1,10 +1,10 @@
 .mainHeading {
     margin-top: 2rem;
-    width: 100%;
+    width: calc(100% - 4rem);
     text-align: center;
     font-size: var(--fs-900);
     text-transform: uppercase;
     font-family: var(--font-heading);
-    line-height: 1.5;
+    line-height: 1;
     letter-spacing: 2px;
 }

@@ -11,24 +11,38 @@ const useTasks = (zone) => {
   useEffect(() => {
     const savedTasks = loadTasksFromLocalStorage()
 
+    const sortTasks = (tasks) => {
+      return tasks.sort((a, b) => {
+        const timeA =
+          typeof a.completeTaskBy === 'number'
+            ? a.completeTaskBy
+            : parseInt(a.completeTaskBy.split(':')[0])
+        const timeB =
+          typeof b.completeTaskBy === 'number'
+            ? b.completeTaskBy
+            : parseInt(b.completeTaskBy.split(':')[0])
+        return timeA - timeB
+      })
+    }
+
     if (savedTasks && savedTasks[zone]) {
       const currentDayTasks = getCurrentDayTasks(savedTasks[zone])
-      setTasks(currentDayTasks)
+      setTasks(sortTasks(currentDayTasks))
     } else {
-      setTasks(getCurrentDayTasks(zone))
+      setTasks(sortTasks(getCurrentDayTasks(zone)))
     }
   }, [zone])
 
   const toggleTaskState = (taskId) => {
     const updatedTasks = tasks.map((task) => {
       if (task.id === taskId) {
-        const newState =
-          task.state === 'default'
-            ? 'working'
-            : task.state === 'working'
-            ? 'complete'
-            : 'default'
-        return { ...task, state: newState }
+        if (task.state === 'default') {
+          return { ...task, state: 'working' }
+        } else if (task.state === 'working') {
+          return { ...task, state: 'complete' }
+        } else {
+          return { ...task, state: 'default' }
+        }
       }
       return task
     })
