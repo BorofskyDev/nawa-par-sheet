@@ -1,10 +1,12 @@
-import ZonesAppComponent from "@/components/zones/Zones";
-import { zoneAData } from "@/libs/data/zone-data/zoneAData";
+import MainHeading from "@/components/headings/main-heading/MainHeading";
+import TasksList from "@/components/zones/task-list/TaskList";
+import ZoneLinkList from "@/components/zones/zone-link-list/ZoneLinkList";
 
-export default function ZonesApp() {
+export default function ZonesApp({zone}) {
     return (
     <div>
-        <ZonesAppComponent zone='zoneA' />
+        <MainHeading>Get In The Zone!</MainHeading>
+        <ZoneLinkList />
     </div>  
     )
 }
