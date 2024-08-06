@@ -32,7 +32,7 @@ export const zoneCData = [
     completeTaskBy: 20,
     workingTask: false,
     completedTask: false,
-    taskDays: ['Sun', 'Tues', 'Wed', 'Fri', 'Sat'],
+    taskDays: ['Sun', 'Tue', 'Wed', 'Fri', 'Sat'],
     taskDesc:
       'Work any uboats in the back hallway or work a live one on the floor',
   },
