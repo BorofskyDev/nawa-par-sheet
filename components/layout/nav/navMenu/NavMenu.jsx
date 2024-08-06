@@ -25,7 +25,7 @@ export default function NavMenu({ isMenuOpen, handleMenuToggle }) {
   }
 
   const navigationLinks = [
-    { href: '/', label: 'Home' },
+    { href: '/', label: 'Home', clasName: 'red-theme'},
     { href: '/zones', label: 'Zones' },
     { href: '/par-sheets', label: 'PAR Sheets' },
     
@@ -38,13 +38,15 @@ export default function NavMenu({ isMenuOpen, handleMenuToggle }) {
     >
       <nav>
         <ul>
-          {navigationLinks.map(({ href, label }, index) => (
-            <li key={index}>
-              <InternalNavLink href={href} onClick={handleLinkClick}>
-                {label}
-              </InternalNavLink>
-            </li>
-          ))}
+         <li>
+          <InternalNavLink href='/' className='red-theme' onClick={handleLinkClick}>Home</InternalNavLink>
+         </li>
+         <li>
+          <InternalNavLink href='/par-sheets' className='green-theme' onClick={handleLinkClick}>Par Sheets</InternalNavLink>
+         </li>
+         <li>
+          <InternalNavLink href='/zones' className='blue-theme' onClick={handleLinkClick}>Zones</InternalNavLink>
+         </li>
         </ul>
       </nav>
       <ThemeToggle />
