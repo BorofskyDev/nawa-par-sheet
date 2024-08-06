@@ -1,26 +1,22 @@
-import NavTab from './nav-tabs/NavTab'
+'use client'
+import { useState } from 'react'
+import NavMenu from './navMenu/NavMenu'
 import styles from './Navbar.module.scss'
+import Hamburger from './hamburger/Hamburger'
+import Logo from './logo/Logo'
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
   return (
-    <nav className={styles.navbar}>
-      <ul>
-        <li>
-          <NavTab href='/par-sheets/' title='home' />
-        </li>
-        <li>
-          <NavTab href='/par-sheets/lets-get-this-bread' title='Lets Get This Bread' />
-        </li>
-        <li>
-          <NavTab href='/par-sheets/tortilla-town' title='Tortilla Town' />
-        </li>
-        <li>
-          <NavTab href='/par-sheets/fayk-meats' title='Fayk Meats' />
-        </li>
-        <li>
-          <NavTab href='/par-sheets/two-byte-muffins' title='2byte Muffins' />
-        </li>
-      </ul>
-    </nav>
+    <div className={styles.navbar} id='nav'>
+      <Logo />
+      <Hamburger isMenuOpen={isMenuOpen} handleMenuToggle={handleMenuToggle} />
+      <NavMenu isMenuOpen={isMenuOpen} handleMenuToggle={handleMenuToggle} />
+    </div>
   )
 }

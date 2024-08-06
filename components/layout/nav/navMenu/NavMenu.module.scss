@@ -1,0 +1,31 @@
+
+
+.navMenu {
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100dvh;
+  transform: translate(-50%, 0);
+  background: hsl(var(--background-color));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  transition: var(--transition-main);
+  z-index: 1000;
+  
+
+}
+
+.opened {
+  left: 50%;
+  overflow: hidden;
+
+ 
+}
+
+.no-scroll {
+  overflow: hidden;
+}

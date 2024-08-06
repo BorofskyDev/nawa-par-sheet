@@ -1,6 +1,7 @@
 import { vt323, inconsolata } from './fonts'
 import { ThemeProvider } from 'next-themes'
 import '@/styles/globals.scss'
+import Navbar from '@/components/layout/nav/Navbar'
 
 const header = vt323
 const body = inconsolata
@@ -21,7 +22,7 @@ export default function RootLayout({ children }) {
       <body className={`${header.variable} ${body.variable}`}>
         <ThemeProvider>
           
-          
+          <Navbar />
           {children}
         </ThemeProvider>
       </body>

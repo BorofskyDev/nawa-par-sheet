@@ -1,6 +1,6 @@
 import ParSheetLinkButton from '@/components/buttons/par-sheet-link-button/ParSheetLinkButton'
 import styles from './LinkContainer.module.scss'
-import ThemeToggle from '../theme-toggle/ThemeToggle'
+import ThemeToggle from '../nav/navMenu/theme-toggle/ThemeToggle'
 
 export default function LinkContainer() {
   return (

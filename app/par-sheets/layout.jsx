@@ -17,7 +17,7 @@ export default function ParSheetLayout({ children }) {
     
       <div >
         
-          <Navbar />
+          
           <PageNotice>
             <GiInfinity />
             {''} = Stack as much as possible
