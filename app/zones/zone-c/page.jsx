@@ -3,11 +3,10 @@ import ZonesAppComponent from '@/components/zones/Zones'
 import { zoneCData } from '@/libs/data/zone-data/zoneCData'
 
 export default function ZoneBPage() {
-  console.log('Zone C Data:', zoneCData)
   return (
-    <div>
+    <div className='grid-center'>
       <MainHeading>Zone C</MainHeading>
-      <ZonesAppComponent zone={zoneCData} />
+      <ZonesAppComponent className='blue-theme' zone={zoneCData} />
     </div>
   )
 }

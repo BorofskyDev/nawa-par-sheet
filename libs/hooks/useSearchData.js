@@ -17,7 +17,6 @@ export default function useSearchData() {
   const [filteredData, setFilteredData] = useState([])
 
   const handleSearch = (query) => {
-    console.log('Search Query:', query)
     if (!query) {
       setFilteredData([])
       return
@@ -27,7 +26,6 @@ export default function useSearchData() {
     const results = allData.filter((item) =>
       item.brand.toLowerCase().includes(lowerCaseQuery)
     )
-    console.log('Search results', results)
     setFilteredData(results)
   }
 

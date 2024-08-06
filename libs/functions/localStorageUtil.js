@@ -1,26 +1,29 @@
-const STORAGE_KEY = 'zoneTasks'
+export const loadTasksFromLocalStorage = () => {
+  try {
+    const tasks = localStorage.getItem('tasks')
+    return tasks ? JSON.parse(tasks) : null
+  } catch (error) {
+    console.error('Error loading tasks from local storage:', error)
+    return null
+  }
+}
 
 export const saveTasksToLocalStorage = (tasks) => {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(tasks))
-}
-
-export const loadTasksFromLocalStorage = () => {
-  const tasks = localStorage.getItem(STORAGE_KEY)
-  return tasks ? JSON.parse(tasks) : null
-}
-
-export const clearLocalStorage = () => {
-  localStorage.removeItem(STORAGE_KEY)
+  try {
+    localStorage.setItem('tasks', JSON.stringify(tasks))
+  } catch (error) {
+    console.error('Error saving tasks to local storage:', error)
+  }
 }
 
 export const resetTasksAtMidnight = (defaultTasks) => {
   const now = new Date()
-  const midnight = new Date()
-  midnight.setHours(24, 0, 0, 0)
-  const timeout = midnight.getTime() - now.getTime()
+  const millisTillMidnight =
+    new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1, 0, 0, 0, 0) -
+    now
 
   setTimeout(() => {
     saveTasksToLocalStorage(defaultTasks)
     resetTasksAtMidnight(defaultTasks)
-  }, timeout)
+  }, millisTillMidnight)
 }

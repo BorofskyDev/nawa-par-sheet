@@ -22,9 +22,17 @@ export default function TaskComponent({ task, onToggleTaskState }) {
       <h3 className={styles.taskComponent__taskName}>{task.taskName}</h3>
       <p className={styles.taskComponent__taskDesc}>{task.taskDesc}</p>
       <p className={styles.taskComponent__completeTaskBy}>
-        {convertTo12HourFormat(task.completeTaskBy)}
+        Complete by: {convertTo12HourFormat(task.completeTaskBy)}
       </p>
-      <button className={styles.taskComponent__taskWorking}>
+      <button
+        className={`${styles.taskComponent__taskWorking} ${
+          task.state === 'working'
+            ? styles.working
+            : task.state === 'complete'
+            ? styles.complete
+            : ''
+        }`}
+      >
         {task.state === 'working'
           ? 'Currently Working'
           : task.state === 'complete'

@@ -1,6 +1,14 @@
 export const getCurrentDayTasks = (tasks) => {
-  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-  const today = days[new Date().getDay()]
+  const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+  const currentDay = daysOfWeek[new Date().getDay()]
 
-  return tasks.filter((task) => task.taskDays.includes(today))
+  console.log(`Current day: ${currentDay}`)
+  console.log(`All tasks:`, tasks)
+
+  const filteredTasks = tasks.filter((task) =>
+    task.taskDays.includes(currentDay)
+  )
+
+  console.log(`Filtered tasks for ${currentDay}:`, filteredTasks)
+  return filteredTasks
 }

@@ -12,24 +12,19 @@ const useTasks = (zone) => {
     const savedTasks = loadTasksFromLocalStorage()
 
     const sortTasks = (tasks) => {
-      return tasks.sort((a, b) => {
-        const timeA =
-          typeof a.completeTaskBy === 'number'
-            ? a.completeTaskBy
-            : parseInt(a.completeTaskBy.split(':')[0])
-        const timeB =
-          typeof b.completeTaskBy === 'number'
-            ? b.completeTaskBy
-            : parseInt(b.completeTaskBy.split(':')[0])
-        return timeA - timeB
-      })
+      return tasks.sort((a, b) => a.completeTaskBy - b.completeTaskBy)
     }
 
+    console.log('Saved tasks:', savedTasks)
+
     if (savedTasks && savedTasks[zone]) {
+      console.log('Tasks for zone:', savedTasks[zone])
       const currentDayTasks = getCurrentDayTasks(savedTasks[zone])
       setTasks(sortTasks(currentDayTasks))
     } else {
-      setTasks(sortTasks(getCurrentDayTasks(zone)))
+      console.log('Using default zone tasks:', zone)
+      const zoneData = getCurrentDayTasks(zone)
+      setTasks(sortTasks(zoneData))
     }
   }, [zone])
 

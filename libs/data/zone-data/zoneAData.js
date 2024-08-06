@@ -25,7 +25,7 @@ export const zoneAData = [
     completeTaskBy: 10,
     workingTask: false,
     completedTask: false,
-    taskDays: ['Sun', 'Tues', 'Wed', 'Fri', 'Sat'],
+    taskDays: ['Sun', 'Tue', 'Wed', 'Fri', 'Sat'],
     taskDesc: 'Work the frozen aisle with fresh stock that has arrived',
   },
   {
@@ -34,7 +34,7 @@ export const zoneAData = [
     completeTaskBy: 11,
     workingTask: false,
     completedTask: false,
-    taskDays: ['Sun', 'Tues', 'Wed', 'Fri', 'Sat'],
+    taskDays: ['Sun', 'Tue', 'Wed', 'Fri', 'Sat'],
     taskDesc: 'Work the bread with fresh stock that has arrived',
   },
   {
@@ -63,7 +63,7 @@ export const zoneAData = [
     completeTaskBy: 15,
     workingTask: false,
     completedTask: false,
-    taskDays: ['Sun', 'Tues', 'Wed', 'Fri', 'Sat'],
+    taskDays: ['Sun', 'Tue', 'Wed', 'Fri', 'Sat'],
     taskDesc:
       'Work any uboats in the back hallway or work a live one on the floor',
   },
@@ -93,7 +93,7 @@ export const zoneAData = [
     completeTaskBy: 15,
     workingTask: false,
     completedTask: false,
-    taskDays: ['Mon', 'Thurs'],
+    taskDays: ['Mon', 'Thu'],
     taskDesc: "Check with leadership for today's cleaning duties",
   },
   {

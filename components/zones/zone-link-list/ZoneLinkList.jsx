@@ -7,10 +7,10 @@ export default function ZoneLinkList() {
             <li className='red-theme'>
                 <ZoneLink href='/zones/zone-a'>Zone A</ZoneLink>
             </li>
-            <li className='blue-theme'>
+            <li className='green-theme'>
                 <ZoneLink href='/zones/zone-b'>Zone B</ZoneLink>
             </li>
-            <li className='green-theme'>
+            <li className='blue-theme'>
                 <ZoneLink href='/zones/zone-c'>Zone C</ZoneLink>
             </li>
         </ul>
